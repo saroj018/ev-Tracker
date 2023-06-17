@@ -1,4 +1,4 @@
-var map = L.map("map").setView([27.70169, 85.3206],6);
+var map = L.map("map").setView([27.70169, 85.3206], 6);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
   attribution:
@@ -8,8 +8,8 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 // var marker = L.marker([27.67, 84.43]).addTo(map);
 
 //layer control
-let lati
-let long
+let lati;
+let long;
 
 // navigator.geolocation.getCurrentPosition(function (position) {
 //   console.log(position);
@@ -24,7 +24,6 @@ let long
 //   animate: true,
 //   duration: 3
 // }).addTo(map)
-
 
 // L.Routing.control({
 //   waypoints: [
@@ -53,40 +52,32 @@ let long
 //   }).addTo(map);
 // })
 
-let placeData=L.geoJSON(mapPlace).addTo(map);
+let placeData = L.geoJSON(mapPlace).addTo(map);
 
 const popUp = document.querySelector(".popup");
+const selected = document.getElementById("selected");
+placeData.on("click", function (e) {
+  lati = e.latlng.lat;
+  long = e.latlng.lng;
 
-
-placeData.on('click',function(e){
-  lati=e.latlng.lat
-  long=e.latlng.lng
-
-popUp.style.display = "block";
+  // popUp.style.display = "block";
+  popUp.classList.add("popupAnim");
 
   // L.tooltip(e.latlng,).addTo(map);
+});
 
+function startNavigation() {
+  console.log("ljk");
+  navigator.geolocation.getCurrentPosition(({ coords }) => {
+    console.log(coords);
+    L.Routing.control({
+      waypoints: [
+        L.latLng(coords.latitude, coords.longitude),
 
+        L.latLng(lati, long),
+      ],
+    }).addTo(map);
+  });
 
-})
-
-function startNavigation(){
-  console.log('ljk')
-    navigator.geolocation.getCurrentPosition(({coords})=>{
-      console.log(coords)
-      L.Routing.control({
-        waypoints: [
-          L.latLng(coords.latitude,coords.longitude),
-          
-          L.latLng(lati,long)
-        ]
-      }).addTo(map);
-    })
-    
-    
-    console.log(lati,long);
-  }
-
-
-
-
+  console.log(lati, long);
+}
