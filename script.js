@@ -55,25 +55,38 @@ let long
 
 let placeData=L.geoJSON(mapPlace).addTo(map);
 
+const popUp = document.querySelector(".popup");
 
 
 placeData.on('click',function(e){
   lati=e.latlng.lat
   long=e.latlng.lng
 
-  L.tooltip(e.latlng, {content: 'this is location'}).addTo(map);
-  navigator.geolocation.getCurrentPosition(({coords})=>{
-    console.log(coords)
-    L.Routing.control({
-      waypoints: [
-        L.latLng(coords.latitude,coords.longitude),
-        
-        L.latLng(lati,long)
-      ]
-    }).addTo(map);
-  })
-  
+popUp.style.display = "block";
 
-  console.log(lati,long);
+  // L.tooltip(e.latlng,).addTo(map);
+
+
+
 })
+
+function startNavigation(){
+  console.log('ljk')
+    navigator.geolocation.getCurrentPosition(({coords})=>{
+      console.log(coords)
+      L.Routing.control({
+        waypoints: [
+          L.latLng(coords.latitude,coords.longitude),
+          
+          L.latLng(lati,long)
+        ]
+      }).addTo(map);
+    })
+    
+    
+    console.log(lati,long);
+  }
+
+
+
 

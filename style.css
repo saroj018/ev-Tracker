@@ -1,11 +1,8 @@
 .main {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+ min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 .container {
@@ -28,4 +25,13 @@
 }
 #map:focus {
   outline: none;
+}
+
+.popup{
+  max-width: 300px;
+  width: 60%;
+  height: 30;
+  display: none;
+  box-shadow: 2px 2px 2px #999;
+  background-color: #888;
 }
