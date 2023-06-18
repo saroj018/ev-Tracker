@@ -10,7 +10,8 @@ let mapPlace={
         charging_level:'level 2(240v,30amp),DC fast charger(tesla super charger)',
         availibility:'true',
         curds:'3',
-        description:"National Power Station in Bharatpur, ChaubishKothi, is an EV charging station offering Level 2 (240V, 30Amp) and DC fast charging (Tesla Super Charger). With 3 available curds, the station ensures convenient charging for multiple electric vehicles. It is currently available and supports CCS and Tesla Super Charger connectivity."
+        description:"National Power Station in Bharatpur, ChaubishKothi, is an EV charging station offering Level 2 (240V, 30Amp) and DC fast charging (Tesla Super Charger). With 3 available curds, the station ensures convenient charging for multiple electric vehicles. It is currently available and supports CCS and Tesla Super Charger connectivity.",
+        model:['tesla','kia']
         
 
       },
@@ -31,7 +32,8 @@ let mapPlace={
         charging_level:'Level 3 (480V, 50Amp), Level 2 (240V, 30Amp)',
         availibility:false,
         curds:'5',
-        description:"Green Energy Station in Kathmandu's Thamel offers Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging. Although currently unavailable, it supports CHAdeMO and Type 2 connectivity. With five curds available, it provides convenient charging options for electric vehicle owners in Thamel."
+        description:"Green Energy Station in Kathmandu's Thamel offers Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging. Although currently unavailable, it supports CHAdeMO and Type 2 connectivity. With five curds available, it provides convenient charging options for electric vehicle owners in Thamel.",
+        model:['hyundai','kia']
       },
       "geometry": {
         "coordinates": [
@@ -50,7 +52,8 @@ let mapPlace={
         charging_level:'Level 3 (480V, 50Amp), Level 2 (240V, 30Amp)',
         availibility:true,
         curds:'4',
-        description:"Power Up Station, located in Pokhara's Lakeside area, is an EV charging station that offers both CCS and CHAdeMO connectivity options. It provides Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging capabilities, catering to the charging needs of electric vehicles. The station has a true availability status, indicating that it is operational and accessible for EV charging. With four curds available, Power Up Station allows for the simultaneous charging of up to four vehicles, ensuring convenience and efficient charging for electric vehicle owners in Pokhara's Lakeside."
+        description:"Power Up Station, located in Pokhara's Lakeside area, is an EV charging station that offers both CCS and CHAdeMO connectivity options. It provides Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging capabilities, catering to the charging needs of electric vehicles. The station has a true availability status, indicating that it is operational and accessible for EV charging. With four curds available, Power Up Station allows for the simultaneous charging of up to four vehicles, ensuring convenience and efficient charging for electric vehicle owners in Pokhara's Lakeside.",
+        model:['hyundai','bmw','byd']
       },
       "geometry": {
         "coordinates": [
@@ -69,7 +72,8 @@ let mapPlace={
         charging_level:' Level 2 (240V, 30Amp), DC Fast Charger (Tesla Super Charger)',
         availibility:true,
         curds:'1',
-        description:"VoltCharge Center, located near Patan's Durbar Square, is an EV charging center that offers Type 2 and Tesla Super Charger connectivity options. It provides Level 2 charging at 240V and 30Amp, suitable for overnight or extended charging sessions. Additionally, it features a DC Fast Charger with Tesla Super Charger compatibility, enabling faster charging times for Tesla vehicles equipped with this technology."
+        description:"VoltCharge Center, located near Patan's Durbar Square, is an EV charging center that offers Type 2 and Tesla Super Charger connectivity options. It provides Level 2 charging at 240V and 30Amp, suitable for overnight or extended charging sessions. Additionally, it features a DC Fast Charger with Tesla Super Charger compatibility, enabling faster charging times for Tesla vehicles equipped with this technology.",
+        model:['kia','tata','tesla']
       },
       "geometry": {
         "coordinates": [
@@ -89,7 +93,8 @@ let mapPlace={
         charging_level:' Level 3 (480V, 50Amp), Level 2 (240V, 30Amp)',
         availibility:false,
         curds:'3',
-        description:"EnergiFuel Station, situated on Kolkata's Park Street, is an electric vehicle charging station offering Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging. Although currently unavailable, it provides CCS and CHAdeMO connectivity and has 3 curds for simultaneous charging. EnergiFuel Station aims to support the EV community by providing accessible and efficient charging infrastructure."
+        description:"EnergiFuel Station, situated on Kolkata's Park Street, is an electric vehicle charging station offering Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging. Although currently unavailable, it provides CCS and CHAdeMO connectivity and has 3 curds for simultaneous charging. EnergiFuel Station aims to support the EV community by providing accessible and efficient charging infrastructure.",
+        model:['hyundai','bmw',]
       },
       "geometry": {
         "coordinates": [
@@ -108,7 +113,8 @@ let mapPlace={
         charging_level:'Level 2 (240V, 30Amp), Level 3 (480V, 50Amp)',
         availibility:true,
         curds:'2',
-        description:"PowerCharge Depot, located near Nagarkot's View Tower, is an EV charging depot that offers CCS and Type 2 connectivity options. It provides Level 2 charging at 240V and 30Amp, suitable for overnight or extended charging sessions. Additionally, it offers Level 3 charging at 480V and 50Amp, allowing for faster charging times."
+        description:"PowerCharge Depot, located near Nagarkot's View Tower, is an EV charging depot that offers CCS and Type 2 connectivity options. It provides Level 2 charging at 240V and 30Amp, suitable for overnight or extended charging sessions. Additionally, it offers Level 3 charging at 480V and 50Amp, allowing for faster charging times.",
+        model:['hyundai','bmw','byd','tata']
       },
       "geometry": {
         "coordinates": [
@@ -127,7 +133,8 @@ let mapPlace={
         charging_level:'Level 2 (240V, 30Amp), DC Fast Charger (Tesla Super Charger)',
         availibility:true,
         curds:'4',
-        description:"Ampere Junction in Chitwan's Sauraha offers Level 2 (240V, 30Amp) and DC Fast Charger (Tesla Super Charger) charging options. With four curds available, it provides convenient and reliable charging for electric vehicle owners. Ampere Junction supports Type 2 and Tesla Super Charger connectivity and has a true availability status."
+        description:"Ampere Junction in Chitwan's Sauraha offers Level 2 (240V, 30Amp) and DC Fast Charger (Tesla Super Charger) charging options. With four curds available, it provides convenient and reliable charging for electric vehicle owners. Ampere Junction supports Type 2 and Tesla Super Charger connectivity and has a true availability status.",
+        model:['byd','tata']
       },
       "geometry": {
         "coordinates": [
@@ -146,7 +153,8 @@ let mapPlace={
         charging_level:'Level 3 (480V, 50Amp), Level 2 (240V, 30Amp)',
         availibility:false,
         curds:'2',
-        description:"ZapPower Station in Itahari, located at Golchha Chowk, offers Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging. However, it is currently unavailable. With two curds available, ZapPower Station provides charging solutions for EV owners in Itahari's Golchha Chowk."
+        description:"ZapPower Station in Itahari, located at Golchha Chowk, offers Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging. However, it is currently unavailable. With two curds available, ZapPower Station provides charging solutions for EV owners in Itahari's Golchha Chowk.",
+        model:['kia','byd','tata']
       },
       "geometry": {
         "coordinates": [
@@ -165,7 +173,8 @@ let mapPlace={
         charging_level:'Level 2 (240V, 30Amp), DC Fast Charger (Tesla Super Charger)',
         availibility:true,
         curds:'5',
-        description:"CurrentCharge Hub in Damak, located on the Main Road, offers Level 2 (240V, 30Amp) and DC Fast Charger (Tesla Super Charger) charging. With five curds available, it provides convenient and reliable charging for electric vehicle owners. CurrentCharge Hub supports CCS and Type 2 connectivity and has a true availability status."
+        description:"CurrentCharge Hub in Damak, located on the Main Road, offers Level 2 (240V, 30Amp) and DC Fast Charger (Tesla Super Charger) charging. With five curds available, it provides convenient and reliable charging for electric vehicle owners. CurrentCharge Hub supports CCS and Type 2 connectivity and has a true availability status.",
+        model:['tata']
       },
       "geometry": {
         "coordinates": [
@@ -184,7 +193,8 @@ let mapPlace={
         charging_level:' Level 3 (480V, 50Amp), Level 2 (240V, 30Amp)',
         availibility:false,
         curds:'4',
-        description:"PowerSpark Station in Dharan, located at Bhanu Chowk, offers Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging. However, it is currently unavailable. With four curds available, PowerSpark Station provides charging solutions for EV owners in Dharan's Bhanu Chowk."
+        description:"PowerSpark Station in Dharan, located at Bhanu Chowk, offers Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging. However, it is currently unavailable. With four curds available, PowerSpark Station provides charging solutions for EV owners in Dharan's Bhanu Chowk.",
+        model:['hyundai','bmw','kia']
       },
       "geometry": {
         "coordinates": [
@@ -203,7 +213,8 @@ let mapPlace={
         charging_level:' Level 2 (240V, 30Amp), Level 3 (480V, 50Amp)',
         availibility:true,
         curds:'2',
-        description:"ElectroBoost Hub in Dhangadhi, located at Clock Tower Chowk, offers Level 2 (240V, 30Amp) and Level 3 (480V, 50Amp) charging. With two curds available, it provides convenient and reliable charging for electric vehicle owners. ElectroBoost Hub supports CCS and Type 2 connectivity and has a true availability status."
+        description:"ElectroBoost Hub in Dhangadhi, located at Clock Tower Chowk, offers Level 2 (240V, 30Amp) and Level 3 (480V, 50Amp) charging. With two curds available, it provides convenient and reliable charging for electric vehicle owners. ElectroBoost Hub supports CCS and Type 2 connectivity and has a true availability status.",
+        model:['hyundai','bmw','byd','tata']
       },
       "geometry": {
         "coordinates": [
@@ -221,7 +232,9 @@ let mapPlace={
         connectivity:'Type 2, Tesla Super Charger',
         charging_level:'Level 2 (240V, 30Amp), DC Fast Charger (Tesla Super Charger)',
         availibility:true,
-        curds:'3'
+        curds:'3',
+        description:"AmpVolt Depot in Birgunj, located at Adarsh Nagar, offers Level 2 (240V, 30Amp) and DC Fast Charger (Tesla Super Charger) charging. With three curds available, it provides convenient and reliable charging for electric vehicle owners. AmpVolt Depot supports Type 2 and Tesla Super Charger connectivity and has a true availability status.",
+        model:['hyundai','kia']
       },
       "geometry": {
         "coordinates": [
@@ -239,7 +252,9 @@ let mapPlace={
         connectivity:'CCS, CHAdeMO',
         charging_level:'Level 3 (480V, 50Amp), Level 2 (240V, 30Amp)',
         availibility:false,
-        curds:'1'
+        curds:'1',
+        description:"ElectraCharge Center in Birendranagar, located at Traffic Chowk, offers Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging. However, it is currently unavailable. With one curd available, ElectraCharge Center provides charging solutions for EV owners in Birendranagar's Traffic Chowk.",
+        model:['tesla','tata']
       },
       "geometry": {
         "coordinates": [
@@ -258,7 +273,8 @@ let mapPlace={
         charging_level:'Level 3 (480V, 50Amp), Level 2 (240V, 30Amp)',
         availibility:false,
         curds:'1',
-        description:"ElectraCharge Center in Hetauda, located on Bank Road, is an EV charging facility offering Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging. Although currently unavailable, it supports CCS and CHAdeMO connectivity and has one available curd for charging. ElectraCharge Center aims to provide convenient charging solutions for electric vehicle owners in Hetauda."
+        description:"ElectraCharge Center in Hetauda, located on Bank Road, is an EV charging facility offering Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging. Although currently unavailable, it supports CCS and CHAdeMO connectivity and has one available curd for charging. ElectraCharge Center aims to provide convenient charging solutions for electric vehicle owners in Hetauda.",
+        model:['bmw','byd']
       },
       "geometry": {
         "coordinates": [
@@ -277,7 +293,8 @@ let mapPlace={
         charging_level:'Level 3 (480V, 50Amp), Level 2 (240V, 30Amp)',
         availibility:true,
         curds:'4',
-        description:"EnergyCharge Station, located in Gorkha's Tallo Bazaar, is an EV charging facility offering CHAdeMO, CCS, and Type 2 connectivity options. It provides Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging capabilities. With an availability status of true, this station is operational and accessible for electric vehicle charging. EnergyCharge Station has four curds available, allowing for simultaneous charging of up to four vehicles. It serves as a convenient and reliable charging solution for EV owners in Gorkha."
+        description:"EnergyCharge Station, located in Gorkha's Tallo Bazaar, is an EV charging facility offering CHAdeMO, CCS, and Type 2 connectivity options. It provides Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging capabilities. With an availability status of true, this station is operational and accessible for electric vehicle charging. EnergyCharge Station has four curds available, allowing for simultaneous charging of up to four vehicles. It serves as a convenient and reliable charging solution for EV owners in Gorkha.",
+        model:['hyundai','bmw','byd','tata','kia']
       },
       "geometry": {
         "coordinates": [
@@ -296,7 +313,8 @@ let mapPlace={
         charging_level:'Level 3 (480V, 50Amp), Level 2 (240V, 30Amp)',
         availibility:false,
         curds:'2',
-        description:"PowerUp Hub in Lalitpur is an EV charging hub offering Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging. However, it is currently unavailable. With two curds available, PowerUp Hub provides charging solutions for EV owners in Lalitpur."
+        description:"PowerUp Hub in Lalitpur is an EV charging hub offering Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging. However, it is currently unavailable. With two curds available, PowerUp Hub provides charging solutions for EV owners in Lalitpur.",
+        model:['tata','kia']
       },
       "geometry": {
         "coordinates": [
@@ -314,7 +332,9 @@ let mapPlace={
         connectivity:'CCS, Type 2',
         charging_level:'Level 2 (240V, 30Amp), Level 3 (480V, 50Amp)',
         availibility:true,
-        curds:'5'
+        curds:'5',
+        description:"ElectraCharge Depot in Manang, located at Chame Bazaar, offers Level 2 (240V, 30Amp) and Level 3 (480V, 50Amp) charging. With five curds available, it provides convenient and reliable charging for electric vehicle owners. ElectraCharge Depot supports CCS and Type 2 connectivity and has a true availability status.",
+        model:['kia']
       },
       "geometry": {
         "coordinates": [
@@ -332,7 +352,9 @@ let mapPlace={
         connectivity:' Type 2, Tesla Super Charger',
         charging_level:'Level 2 (240V, 30Amp), DC Fast Charger (Tesla Super Charger)',
         availibility:true,
-        curds:'5'
+        curds:'5',
+        description:"VoltPower Station in Palpa, located at Tansen Bazaar, offers Level 2 (240V, 30Amp) and DC Fast Charger (Tesla Super Charger) charging. With five curds available, it provides convenient and reliable charging for electric vehicle owners. VoltPower Station supports Type 2 and Tesla Super Charger connectivity and has a true availability status.",
+        model:['hyundai','tata']
       },
       "geometry": {
         "coordinates": [
@@ -350,7 +372,9 @@ let mapPlace={
         connectivity:' CCS, CHAdeMO',
         charging_level:'Level 3 (480V, 50Amp), Level 2 (240V, 30Amp)',
         availibility:false,
-        curds:'5'
+        curds:'5',
+        description:"EnergiCharge Hub in Manang, located at Chame Bazaar, offers Level 3 (480V, 50Amp) and Level 2 (240V, 30Amp) charging. However, it is currently unavailable. With five curds available, EnergiCharge Hub provides charging solutions for EV owners in Manang's Chame Bazaar.",
+        model:['bmw','kia']
       },
       "geometry": {
         "coordinates": [
