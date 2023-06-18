@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-owner">
+        <form id="formData">
+
+            <label for="">Station Name</label>
+            <input type="text" name="name">
+            <label for="">Address</label>
+            <input type="text" name="address">
+            <label for="">Connectivity</label>
+            <input type="text" name="connectivity">
+            <label for="">Charging Level</label>
+            <input type="number" name="charging_level">
+            <label for="">Number of Cords</label>
+            <input type="number" name="cords">
+            <label for="">Discription</label>
+            <textarea name="description" id="" cols="30" rows="10"></textarea>
+            
+            <br>
+            <button >Submit</button>
+        </div>
+    </form>
+</body>
+
+<script defer>
+    console.log('hello');
+    const form = document.querySelector("#formData");
+    form.addEventListener('submit',(e)=>{
+        e.preventDefault()
+        console.log('submit');
+        console.log(e)
+
+        let formData=new FormData(form) 
+
+        const station_name=formData.get('name')
+        const address=formData.get('address')
+        const connectivity=formData.get('connectivity')
+        const charginLevel=formData.get('charging_level')
+        const cords=formData.get('cords')
+        const description=formData.get('description')
+    })
+
+</script>
+</html>
