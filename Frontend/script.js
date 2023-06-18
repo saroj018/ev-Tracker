@@ -5,32 +5,25 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
 
+let selectModel=document.getElementById('selectModel');
+let selectedValue;
+let filteredValue;
 // var marker = L.marker([27.67, 84.43]).addTo(map);
-
-
-let popup=document.getElementById('popup')
-let realMap=document.querySelector('#map')
-window.addEventListener('DOMContentLoaded',()=>{
-  realMap.style.display='none'
-  popup.style.display='block'
-
-  
-
-})
-//layer control
-let lati;
-let long;
-
-
-let placeData = L.geoJSON(mapPlace).addTo(map);
-
-const popUp = document.querySelector(".detials");
-const mapContainer = document.getElementById("map");
-// const selected = document.getElementById("selected");
-const navigateBtn = document.getElementById("navigateBtn")
-navigateBtn.onclick = ()=>{
-  startNavigation()
+function clickSaveBtn()
+{
+  selectedValue=selectModel.value
+  console.log(selectedValue);
+  realMap.style.display='block';
+   filteredValue  = mapPlace.features.filter((item)=>{
+    return item.properties.model.includes(selectedValue)
+  })
+  console.log(filteredValue)
+  console.log(mapPlace.features);
+if(filteredValue){
+  mapPlace.features = filteredValue;
+  console.log(mapPlace)
 }
+let placeData = L.geoJSON(mapPlace).addTo(map);
 
 placeData.on("click", function (e) {
   lati = e.latlng.lat;
@@ -62,6 +55,31 @@ address.innerText  = data.address
 
   // L.tooltip(e.latlng,).addTo(map);
 });
+
+}
+
+
+let popup=document.getElementById('popup')
+let realMap=document.querySelector('#map')
+window.addEventListener('DOMContentLoaded',()=>{
+  realMap.style.display='none'
+  popup.style.display='block'
+})
+//layer control
+let lati;
+let long;
+
+
+
+const popUp = document.querySelector(".detials");
+const mapContainer = document.getElementById("map");
+// const selected = document.getElementById("selected");
+const navigateBtn = document.getElementById("navigateBtn")
+navigateBtn.onclick = ()=>{
+  startNavigation()
+}
+
+
 
 function startNavigation() {
   navigator.geolocation.getCurrentPosition(({ coords }) => {

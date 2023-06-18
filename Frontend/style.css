@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 
-
+body{
+  background-image: url('https://th.bing.com/th/id/R.918df60ef8eb24de30c3ad3cbd0d1c2d?rik=ID8WwkpowuukTQ&pid=ImgRaw&r=0');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 #map {
   border: 2px solid green;
@@ -141,11 +145,29 @@ background-color: aqua;
 
 .popup-model{
   position: absolute;
-  z-index: 9;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%,-50%);
+  color: whitesmoke;
+}
+.popup-model h3{
+  font-size: 30px;
+  text-align: center;
+  margin: 5px 0;
 }
 
 select{
   width: 400px;
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+ #save-btn{
+  padding: 10px 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0 15px;
+  font-size: 15px;
+  cursor: pointer;
 }
